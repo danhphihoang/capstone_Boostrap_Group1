@@ -5,6 +5,43 @@ body, html{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+/* Light theme */
+#myBody{
+    background-color:black;
+  }
+  #switchButton {
+    background-color: transparent;
+    color:white;
+    font-size: 25px;
+    box-shadow: none;
+    
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody{
+    background-color:white;
+  }
+  .dark #switchButton {
+    background-color: transparent;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: black;
+    font-size: 25px;
+    box-shadow: none;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  
+  
 /* title */
 .captitle h3{
     font-size: 40px;
@@ -172,45 +209,7 @@ body, html{
 .capnavleft .btn{
     border: none;
 }
-/* Light theme */
-#myBody{
-    background-color:black;
-  }
-  #switchButton {
-    background-color: transparent;
-    color:white;
-    font-size: 25px;
-    box-shadow: none;
-    
-  }
-  #switchButton .fa-sun {
-    display: none;
-  }
-  #switchButton .fa-moon {
-    display: block;
-  }
-  
-  /* Dark Theme*/
-  .dark#myBody{
-    background-color:white;
-  }
-  .dark #switchButton {
-    background-color: transparent;
-  }
-  .dark #switchButton .fa-sun {
-    display: block;
-    color: black;
-    font-size: 25px;
-    box-shadow: none;
-  }
-  
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
-  .dark .card {
-    background-color: black;
-    color: white;
-  }
+
 /* MAJOR */
 .capmajor{
     margin-top: -75px;
@@ -303,10 +302,10 @@ body, html{
 
 /* Capstarted */
 .capstarted{
-    background-color: #f8f9ff;
+    background-color:black;
 }
 .dark .capstarted{
-    background-color:black;
+    background-color: #f8f9ff;
 }
 .card{
     border-radius: 10px;
