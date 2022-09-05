@@ -1,1 +1,482 @@
-html
+/* Global */
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* title */
+.captitle h3{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+.captitle span{
+    color: #ff6e65;
+}
+.captitle h3::before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #707070;
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 50%;
+    transform: translateX(75%);
+}
+.captitle h3::after{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #707070;
+    display: block;
+    margin: 10px auto;
+   
+}
+/* HEADER */
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d369f;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header__left a{
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+.header__left a:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+.header__right i{
+    color: white;
+    transition: all .5s;
+}
+.header__right i:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+
+
+.capnav a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .5s;
+}
+.capnav span{
+    color: #0d369f;
+    font-size: 26px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all .5s;
+}
+.capnav span:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+
+.capnavleft .nav-item {
+    transition: all .5s;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.capnavleft .nav-item:hover .nav-link{
+    color: #ff6e65;
+    cursor: pointer;
+}
+.capnavleft .nav-item.active .nav-link{
+    color: #ff6e65;
+}
+
+.capnavleft .nav-item .dropdown-menu a:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+.form-control{
+    border-radius: 30px;
+    height: 45px;
+}
+.capnavleft .form-inline{
+    position: relative;
+}
+.capnav__button{
+    border: 0;
+    background-color: transparent;
+    color: #0d369f;
+    position: absolute;
+    left: 185px;
+}
+
+/* CAROUSEL */
+
+.capstuCarousel{
+    margin: 0;
+    padding: 0;
+}
+.carousel-caption{
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h1{
+    font-weight: bold ;
+    font-size: 65px;
+    margin: 30px 0;
+}
+.carousel-caption button{
+    font-size: 16px;
+    background-color: white;
+    font-weight: 600;
+    transition: all .5s;
+}
+.carousel-caption button:hover{
+    background-color:#ff6e65 ;
+    color: white;
+}
+.carousel-caption i{
+    margin: 0 5px;
+}
+#carouselcap .carousel-item{
+    height: 100vh;
+
+}
+#carouselcap .carousel-indicators li{
+    border: 0;
+    border-radius: 100%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    margin: 5px ;
+    padding: 2px;
+}
+.carousel-indicators .active{
+    background-color: #ff6e65;
+}
+
+.carousel-indicators {
+    left: 82%;
+    bottom: 30px;
+    justify-content: right;
+}
+.capnavleft .btn{
+    border: none;
+}
+/* Light theme */
+#myBody{
+    background-color:black;
+  }
+  #switchButton {
+    background-color: transparent;
+    color:white;
+    font-size: 25px;
+    box-shadow: none;
+    
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody{
+    background-color:white;
+  }
+  .dark #switchButton {
+    background-color: transparent;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: black;
+    font-size: 25px;
+    box-shadow: none;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .card {
+    background-color: black;
+    color: white;
+  }
+/* MAJOR */
+.capmajor{
+    margin-top: -75px;
+    margin-bottom: 5rem;
+}
+.capcol i{
+    transform: skewX(-10deg);
+}
+.capmajor_inner{
+    padding: 7px;
+}
+.capmajor_item{
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 45px 35px;
+}
+.capmajor_item i{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.capmajor_item h3{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.capmajor_item h3:hover{
+    color: black;
+}
+.color1 {
+    background-color: #037ef3;
+}
+.color2{
+    background-color: #ffc949;
+}
+.color3{
+    background-color: #ff4f81;
+}
+.color4{
+    background-color: #1ee697;
+}
+
+/* Welcome */
+.capwelcome__content{
+    text-align: center;
+}
+.capwelcome__inner i{
+    font-size: 30px;
+    color: #0d369f;
+    background-color: #e9edf6;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+.capcol3{
+    background-color: #e9edf6;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.capcol3 i{
+    font-size: 30px;
+    color: #0d369f;
+    margin: auto;
+    transform: skewX(-10deg);
+}
+.capwelcome__content .col-4 a{
+    text-decoration: none;
+}
+.capwelcome__text p{
+    color: #707070;
+}
+.capwelcome__text h3{
+    margin: 20px 0;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: black;
+    transition: all .2s;
+}
+.capwelcome__text h3:hover{
+    color: #ff6e65;
+}
+
+/* Capstarted */
+.capstarted{
+    background-color: #f8f9ff;
+}
+.dark .capstarted{
+    background-color:black;
+}
+.card{
+    border-radius: 10px;
+}
+.card .card-img-top{
+    border-radius: 10px 10px 0 0;
+}
+.capstarted__content .card .list-group-item{
+    border: 0;
+    font-weight:500;
+}
+.list-group-item i{
+    color: #ff6e65;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.capstarted__meta{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.capstarted__meta a{
+    background: #1DC295;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    color: #FFFFFF ;
+    display: inline-block;
+    margin-right: 5px;
+}
+.capstarted__meta a:first-child{
+    background-color: #FFA100;
+}
+.capstarted__meta a:nth-child(3){
+    background-color:#037ef3;
+}
+.card-body .card-text{
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+.card-body .card-title{
+    font-weight: 600;
+    font-size: 22px;
+}
+.card-body .card-title a{
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+}
+.card-body .card-title a:hover{
+    color:#ff6e65 ;
+}
+.bottom-border {
+    border-bottom: 1px solid #eee;
+}
+.caprating{
+    list-style: none;
+}
+.caprating li{
+    display: inline;
+    color: #ffc949;
+}
+.capstarted__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.capstarted__detail{
+   
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff6e65;
+    transition: all .5s;
+}
+
+.capstarted__detail i{
+    display: inline-block;
+    vertical-align: middle;
+  
+}
+.capstarted__detail:hover{
+    color:#0d369f;
+    text-decoration: none;
+}
+
+
+.capstarted__item{
+    position: relative;
+}
+
+.capstarted__price h6{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background:  #ff6e65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: -55px;
+}
+
+.capstarted__button{
+    text-align: center;
+    padding: 14px 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color:#ff6e65 ;
+    color: white;
+    transition: all .5s;
+    display: block;
+    margin: auto;
+    
+}
+
+/* FLEX */
+.capflex{
+    background-image: url(../img/bg3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.capflex_item i{
+    text-align: center;
+    font-size: 28px;
+    color: #0d369f;
+    background-color: #e9edf6;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.capflex__text{
+
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.capflex__text h5{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.capflex__text p{
+    color: #707070;
+    margin: 0;
+}
+.capflex_inner{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+.capflex_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
